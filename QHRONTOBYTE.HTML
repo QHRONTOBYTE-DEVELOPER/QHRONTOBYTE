@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QHRONTOBYTE</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+  }
+  .header, .nav, .nav a {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .content {
+    margin: 15px;
+    padding: 15px;
+    background-color: #333;
+    border: 2px solid red;
+  }
+  footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>QHRONTOBYTE</h1>
+  </div>
+  <div class="nav">
+    <a href="#home">HOME</a>
+    <a href="#network">NETWORK</a>
+    <a href="#buildings">BUILDINGS</a>
+    <a href="#store">STORE</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#about">ABOUT</a>
+  </div>
+  <div class="content">
+    <p>Welcome to QHRONTOBYTE. Your portal to the digital frontier.</p>
+    <!-- Content goes here -->
+  </div>
+  <footer>
+    <p>Current Date and Time: <span id="datetime"></span></p>
+    <script>
+      document.getElementById('datetime').innerText = new Date().toLocaleString();
+    </script>
+  </footer>
+</body>
+</html>
